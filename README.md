@@ -93,7 +93,7 @@ These design choices reflect common patterns used in production Kubernetes envir
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Abhiram-Rakesh/rke2-kubernetes-ha-aws.git
 cd rke2-ha-aws-terraform-bash
 ```
 
@@ -120,7 +120,7 @@ This command will:
 
 ### 3. Access the Cluster
 
-After installation completes, SSH into the bastion host:
+After installation completes, SSH into the nginx LB using the ssh key in the `/terraform` directory
 
 ```bash
 ssh -i <PATH_TO_SSH_KEY> ubuntu@<NGINX_LB_IP>
@@ -187,14 +187,14 @@ To remove all resources created by this project:
 
 This project provides a production-aligned Proof of Concept for running a highly available RKE2 Kubernetes cluster on AWS, featuring:
 
-    Automated infrastructure provisioning
+- Automated infrastructure provisioning
 
-    High availability control plane
+- High availability control plane
 
-    Secure bastion-based access
+- Secure bastion-based access
 
-    Load-balanced Kubernetes API
+- Load-balanced Kubernetes API
 
-    Simple installation and teardown workflow
+- Simple installation and teardown workflow
 
 It is intended for demonstrations, experimentation, and learning purposes while closely reflecting real-world Kubernetes deployment patterns.
