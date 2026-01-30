@@ -1,0 +1,61 @@
+############################################
+# Terraform
+############################################
+
+# Local Terraform state (PoC)
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/terraform.tfstate.*
+terraform/.terraform.lock.hcl
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+############################################
+# Generated inventory & artifacts
+############################################
+
+# Generated at runtime
+inventory/inventory.json
+
+############################################
+# SSH keys (CRITICAL — NEVER COMMIT)
+############################################
+
+*.pem
+*.key
+terraform/ssh_key.pem
+
+############################################
+# Bash / runtime artifacts
+############################################
+
+*.log
+*.tmp
+*.swp
+*.swo
+
+############################################
+# OS-specific
+############################################
+
+.DS_Store
+Thumbs.db
+
+############################################
+# Editor / IDE
+############################################
+
+.vscode/
+.idea/
+*.code-workspace
+
+############################################
+# Misc
+############################################
+
+.env
+.env.*
+
