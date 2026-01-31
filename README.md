@@ -95,7 +95,7 @@ These design choices reflect common patterns used in production Kubernetes envir
 
 ```bash
 git clone https://github.com/Abhiram-Rakesh/rke2-kubernetes-ha-aws.git
-cd rke2-ha-aws-terraform-bash
+cd rke2-kubernetes-ha-aws
 ```
 
 ### 2. Install the Cluster
